@@ -1,4 +1,4 @@
-import role1, role2
+import role1, role2, dice
 
 # Setup
 yes_no = ["yes", "no"]
@@ -31,29 +31,32 @@ answer = hourglass
 Tries = 3 
 while Tries > 0: 
     Tries = Tries - 1 
-    if question : answer
-    print(“Yay!”)
+    if name1 : answer
+    print("Yay!")
     else: 
-          print(“So sad! You are not ready for the mystery.”)
+    print("So sad! You are not ready for the mystery case.")
 print("you find the hourglass on top of the table.")
 print("you go near the table and catch your eyes on a letter underneath the hourglass.")
 print("you open the letter and see that it is a map showing you directions to a place you have never been before.")
 
 #challenge no.2
+print("you decide to follow the route.you get outside and look at the map.")
+print("which direction would you go?")
 response = ""
 while response not in directions:
-    print("To your left, you see a bear.")
-    print("To your right, there is more forest.")
-    print("There is a rock wall directly in front of you.")
-    print("Behind you is the forest exit.\n")
+    print("To your left, you see a dead end.")
+    print("To your right, there is a scary, dark forest.")
+    print("There is a lake infront of you.")
+    print("Behind you is the exit .\n")
     response = input("What direction do you move?\nleft/right/forward/backward\n")
     if response == "left":
-        print("The bear eats you. Farewell, " + name + ".")
+        print("The road ends here. Farewell, " + name + ".")
         quit()
     elif response == "right":
-        print("You head deeper into the forest.\n")
+        print("You head deeper into the forest and you find a big tree.\n")
     elif response == "forward":
-        print("You cannot scale the wall.\n")
+        print("You stand near the lake and the alligator eats you.\n")
+        quit()
         response = "" 
     elif response == "backward":
         print("You leave the forest. Goodbye, " + name + ".")
@@ -63,10 +66,10 @@ while response not in directions:
 
 #challenge no.3
 print("you see there was something inside the ground so you start digging.")
-print("you found an axe in the ground near the tree with blood on it and a t-shirt with blood stains on it.")
+print("you found an axe and a t-shirt in the ground with blood on it.")
 print("you look around and you see a small house near by.")
 print("you walk towards it and peek inside the window.")
-print("you see someone's shadow.")
+print("you see someone's shadow. This person must be the criminal.")
 response = ""
 while response not in yes_no:
     response = input("Would you like to enter inside the house?\nyes/no\n")
